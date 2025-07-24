@@ -22,7 +22,7 @@ for (const algo of sortingAlgorithms) {
         numCases++;
 
         try {
-            let sorted = algo(testCase.input);
+            let sorted = algo(testCase.input.slice());
             if (sorted.length === testCase.output.length && sorted.every((value, index) => value === testCase.output[index])) {
                 numPassed++;
             } else {
