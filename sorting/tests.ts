@@ -1,9 +1,11 @@
 import { bubbleSort } from "./bubbleSort";
 import { insertionSort } from "./insertionSort";
+import { mergeSort } from "./mergeSort";
 
 const sortingAlgorithms: ((l: number[]) => number[])[] = [
     bubbleSort,
     insertionSort,
+    mergeSort,
 ]
 
 const cases: {input: number[], output: number[]}[] = 
